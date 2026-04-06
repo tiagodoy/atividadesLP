@@ -2,11 +2,12 @@
 
 int main() {
 
-    float m, cm;
-    printf("Digite o valor em metros: ");
-    scanf("%f", &m);
-    cm = m*100;
-    printf("O valor em centímetros é: %.2f\n", cm);
+    float s, p;
+    printf("Digite o seu salário: ");
+    scanf("%f", &s);
+    printf("Digite o percentual de reajuste: ");
+    scanf("%f", &p);
+    printf("O valor do seu novo salário é: %.2f reais\n", s+(s*(p/100)));
 
     return 0;
 }

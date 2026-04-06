@@ -2,15 +2,17 @@
 
 int main() {
 
-    float n1, n2, n3, m;
+    float n1, n2, m;
     printf("Digite a primeira nota: ");
     scanf("%f", &n1);
     printf("Digite a segunda nota: ");
     scanf("%f", &n2);
-    printf("Digite a terceira nota: ");
-    scanf("%f", &n3);
-    m = ((n1*2)+(n2*3)+(n3*5))/10;
-    printf("A média final é: %.2f\n", m);
+    m = (n1+n2)/2;
+    if(m>=6){
+        printf("Aprovado");
+    }else{
+        printf("Reprovado");
+    }
 
     return 0;
-} 
+}

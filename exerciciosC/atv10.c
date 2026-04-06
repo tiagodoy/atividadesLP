@@ -1,12 +1,12 @@
 #include <stdio.h>
 
 int main() {
-
-    float cfab, cfim;
-    printf("Digite o custo de fábrica do carro: ");
-    scanf("%f", &cfab);
-    cfim = cfab + (cfab*0.28) + (cfab*0.45);
-    printf("O custo final do carro é: %.2f reais\n", cfim);
-
+    float vh, h, s;
+    printf("Insira quanto você ganha por hora trabalhada: ");
+    scanf("%f", &vh);
+    printf("Insira quantas horas você trabalha por mês: ");
+    scanf("%f", &h);
+    s = vh * h;
+    printf("Seu salário por mês é R$ %.2f\n", s);
     return 0;
 }

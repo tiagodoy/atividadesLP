@@ -1,19 +1,22 @@
 #include <stdio.h>
 
 int main() {
-
-    float s, v, cv, sf;
-    int c;
-    printf("Digite o seu salário fixo: ");
-    scanf("%f", &s);
-    printf("Digite o número de carros vendidos: ");
-    scanf("%i", &c);
-    printf("Digite o valor total de suas vendas: ");
+    float pb, pn, pv, e, b, n, v;
+    printf("Insira o total de eleitores: ");
+    scanf("%f", &e);
+    printf("Insira o total de votos brancos: ");
+    scanf("%f", &b);
+    printf("Insira o total de votos nulos: ");
+    scanf("%f", &n);
+    printf("Insira o total de votos válidos: ");
     scanf("%f", &v);
-    printf("Digite o valor recebido por carro vendido: ");
-    scanf("%f", &cv);
-    sf = s+(v*0.05)+(c*cv);
-    printf("O valor do seu salário final é: %.2f reais\n", sf);
 
+    pb = b / e * 100;
+    pn = n / e * 100;
+    pv = v / e * 100;
+
+    printf("O percentual de votos brancos é %.2f%%\n", pb);
+    printf("O percentual de votos nulos é %.2f%%\n", pn);
+    printf("O percentual de votos válidos é %.2f%%\n", pv);
     return 0;
 }

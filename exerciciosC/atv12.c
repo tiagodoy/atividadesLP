@@ -1,12 +1,12 @@
 #include <stdio.h>
 
 int main() {
-
-    float f, c;
-    printf("Digite a temperatura em Fahrenheit: ");
-    scanf("%f", &f);
-    c = ((f-32)/9)*5;
-    printf("O temperatura em Celsius é: %.2f\n", c);
-
+    float s, p, ns;
+    printf("Insira o seu salário: ");
+    scanf("%f", &s);
+    printf("Insira o percentual de reajuste: ");
+    scanf("%f", &p);
+    ns = s + (s * (p / 100));
+    printf("Seu novo salário é R$ %.2f\n", ns);
     return 0;
 }

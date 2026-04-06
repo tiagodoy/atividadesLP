@@ -1,16 +1,10 @@
 #include <stdio.h>
 
 int main() {
-
-    float n1, n2, n3, m;
-    printf("Digite a primeira nota: ");
-    scanf("%f", &n1);
-    printf("Digite a segunda nota: ");
-    scanf("%f", &n2);
-    printf("Digite a terceira nota: ");
-    scanf("%f", &n3);
-    m = ((n1*2)+(n2*3)+(n3*5))/10;
-    printf("A média final é: %.2f\n", m);
-
+    float cfab, cfim;
+    printf("Insira o custo de fábrica do carro: ");
+    scanf("%f", &cfab);
+    cfim = cfab + (cfab * 0.28) + (cfab * 0.45);
+    printf("O custo final do carro é R$%.2f\n", cfim);
     return 0;
-} 
+}

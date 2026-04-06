@@ -1,13 +1,10 @@
 #include <stdio.h>
 
 int main() {
-
-    float s, p;
-    printf("Digite o seu salário: ");
-    scanf("%f", &s);
-    printf("Digite o percentual de reajuste: ");
-    scanf("%f", &p);
-    printf("O valor do seu novo salário é: %.2f reais\n", s+(s*(p/100)));
-
+    float l, a;
+    printf("Insira o lado do quadrado: ");
+    scanf("%f", &l);
+    a = l * l;
+    printf("O valor do dobro da area do quadrado é %.2f\n", a * 2);
     return 0;
 }

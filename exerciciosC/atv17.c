@@ -1,18 +1,10 @@
 #include <stdio.h>
 
 int main() {
-
-    float n1, n2, m;
-    printf("Digite a primeira nota: ");
-    scanf("%f", &n1);
-    printf("Digite a segunda nota: ");
-    scanf("%f", &n2);
-    m = (n1+n2)/2;
-    if(m>=6){
-        printf("Aprovado");
-    }else{
-        printf("Reprovado");
-    }
-
+    float r, a;
+    printf("Insira o raio do círculo: ");
+    scanf("%f", &r);
+    a = (r * r) * 3.14159;
+    printf("A area do círculo é %.2f\n", a);
     return 0;
 }

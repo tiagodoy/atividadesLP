@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main(){
-    float V[19], x;
+    float V[20], x;
     for(int i = 0; i < 20; i++){
         printf("insira o %d° número: ", i+1);
         scanf("%f", &V[i]);

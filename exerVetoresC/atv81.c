@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 int main(){
-    float Q[19], menor, pose = -1;
-    for(int i = 0; i <= 19; i++){
+    float Q[20], menor, pose = -1;
+    for(int i = 0; i < 20; i++){
         do{
             printf("insira o %d° número positivo: ", i+1);
             scanf("%f", &Q[i]);
@@ -10,7 +10,7 @@ int main(){
         menor = Q[i];
         pose = i+1;
     }
-    for(int i = 0; i <= 19; i++){
+    for(int i = 0; i < 20; i++){
         if(Q[i] < menor){
             menor = Q[i];
             pose = i+1;

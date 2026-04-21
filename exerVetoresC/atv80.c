@@ -1,14 +1,14 @@
 #include <stdio.h>
 
 int main(){
-    float Q[19], maior = -1, pose = -1;
-    for(int i = 0; i <= 19; i++){
+    float Q[20], maior = -1, pose = -1;
+    for(int i = 0; i < 20; i++){
         do{
             printf("insira o %d° número positivo: ", i+1);
             scanf("%f", &Q[i]);
         }while(Q[i] < 0);
     }
-    for(int i = 0; i <= 19; i++){
+    for(int i = 0; i < 20; i++){
         if(Q[i] > maior){
             maior = Q[i];
             pose = i+1;
